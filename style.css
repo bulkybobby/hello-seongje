@@ -1,0 +1,198 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    height: 84px;
+    background-color: #070707;
+    transition: background-color 0.3s ease;
+}
+.css-head-inner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1220px;
+    align-content: center;
+}
+nav{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.main-menu > a > p{
+    text-decoration: none;
+    color: #fff;
+}
+.main-menu {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.main-menu > ul{
+    display: flex;
+    height: 100%;
+    padding-left: 82px;
+}
+.main-menu  > ul > li{
+    vertical-align: baseline;
+    height: 100%;
+    padding: 32px 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.support-menu{
+    display: flex;
+    align-items: center;
+}
+.support-menu > a > p{
+    padding:0 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.support-menu > button{
+    display: block;
+    border: 0;
+    width: 119px;
+    height: 44px;
+    border-radius: 70px;
+    color: #070707;
+    background-color: #fff;
+    cursor: pointer;
+}
+.mobile-menu{
+    display: none;
+    justify-content: space-between;
+}
+.hamburger-menu{
+    display: block;
+    width: 24px;
+    height: 17px;
+    cursor: pointer;
+    position: relative;
+    border: 0px;
+    background-color: transparent;
+}
+.hamburger-menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #fff;
+}
+.hamburger-menu span:nth-of-type(1){
+    top: 0;
+}
+.hamburger-menu span:nth-of-type(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger-menu span:nth-of-type(3){
+    bottom: 0;
+}
+
+.on-Scroll{
+    background-color: #fff;
+}
+.on-Scroll > .css-head-inner > nav p{
+    color: #070707;
+}
+.on-Scroll > .css-head-inner > nav .resume{
+    color: #FF3569;
+}
+.on-Scroll > .css-head-inner > nav li{
+    color: #070707;
+}
+.on-Scroll > .css-head-inner > nav > .support-menu > button{
+    background-color: #070707;
+    color: #fff;
+}
+.on-Scroll > .css-head-inner > nav > .mobile-menu > button > .hamburger-menu >span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    background-color: #070707;
+}
+@media screen and (max-width:768px) {
+    nav{
+        padding: 32px 18px;
+        height: 100%;
+    }
+    .css-head-inner{
+        padding: 0;
+    }
+    .main-menu > ul{
+        display: none;
+    }
+    .support-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        color: #fff;
+        align-items: center;
+        -webkit-box-align: center;
+    }
+    .mobile-menu > button {
+        background-color: inherit;
+        height: 25px;
+        border: 0;
+        font-size: 24px;
+        padding: 0;
+    }
+    main > .main-welcome > .welcome-message h2{
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+    main > .main-Flow > .overlay h1 {
+        font-size: 2rem;
+    }
+    main > .main-Flow > .overlay h4 {
+        font-size: 1rem;
+    }
+}
+
+.main-welcome{
+    padding-top: 256px;
+    padding-bottom: 172px;
+    background-color: #070707;
+}
+.main-welcome > div{
+    color: #fff;
+    text-align: center;
+}
+.main-welcome > div h2{
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+.main-welcome > div h4{
+    margin-top: 24px;
+    line-height: 1.44;
+    font-size: 24px;
+    color: #fff;
+}
+.overlay{
+    position: relative;
+    text-align: center;
+    padding-top: 362px;
+    padding-bottom: 252px;
+}
+.overlay h1{
+    font-size: 70px;
+    color:#070707;
+}
+.overlay h4{
+    font-size: 35px;
+    color:#070707;
+}
+
